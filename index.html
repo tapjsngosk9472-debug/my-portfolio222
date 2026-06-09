@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人简历网站</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Microsoft YaHei",sans-serif;
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+header{
+    background:#fff;
+    padding:20px 0;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+    border:5px solid #fff;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    color:#666;
+}
+
+.btn{
+    display:inline-block;
+    margin:15px 10px;
+    padding:12px 25px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:#fff;
+    padding:20px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">张三</div>
+<ul>
+<li><a href="#about">关于我</a></li>
+<li><a href="#skills">技能</a></li>
+<li><a href="#projects">作品</a></li>
+<li><a href="#contact">联系</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<img src="https://via.placeholder.com/180" alt="头像">
+<h1>你好，我是张三</h1>
+<h2>前端开发工程师</h2>
+<p>专注于 Web 开发与 AI 应用</p>
+
+<a href="#projects" class="btn">查看作品</a>
+<a href="#contact" class="btn">联系我</a>
+</section>
+
+<section id="about">
+<div class="container">
+<h2 class="section-title">关于我</h2>
+<div class="card">
+<p>
+拥有多年 Web 开发经验，熟悉 HTML、CSS、JavaScript、Vue、React 等前端技术。
+热爱技术创新，关注 AI 与互联网发展，致力于打造优秀的用户体验。
+</p>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+<h2 class="section-title">专业技能</h2>
+
+<div class="skills">
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Vue</div>
+<div class="skill">React</div>
+<div class="skill">Node.js</div>
+</div>
+
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+<h2 class="section-title">项目作品</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>企业官网</h3>
+<p>响应式企业官网设计与开发。</p>
+</div>
+
+<div class="project">
+<h3>电商后台管理系统</h3>
+<p>基于 Vue 开发的数据管理平台。</p>
+</div>
+
+<div class="project">
+<h3>AI 智能助手</h3>
+<p>集成 AI 接口，实现智能问答功能。</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<h2 class="section-title">联系我</h2>
+
+<div class="card">
+<p>📧 Email：your@email.com</p>
+<p>📱 电话：138-0000-0000</p>
+<p>🌐 GitHub：github.com/yourname</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 张三 | Personal Portfolio</p>
+</footer>
+
+</body>
+</html>
